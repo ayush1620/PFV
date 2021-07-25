@@ -4,10 +4,10 @@ import {dijkstra, getNodesInShortestPathOrder} from '../algorithms/dj';
 
 import './PathfinderVisualizer.css';
 
-const START_NODE_ROW = 9;
-const START_NODE_COL = 15;
-const FINISH_NODE_ROW = 9;
-const FINISH_NODE_COL = 35;
+const START_NODE_ROW = 7;
+const START_NODE_COL = 10;
+const FINISH_NODE_ROW = 7;
+const FINISH_NODE_COL = 30;
 
 export default class PathfindingVisualizer extends Component {
   constructor() {
@@ -114,9 +114,9 @@ export default class PathfindingVisualizer extends Component {
 
 const getInitialGrid = () => {
   const grid = [];
-  for (let row = 0; row < 18; row++) {
+  for (let row = 0; row < 16; row++) {
     const currentRow = [];
-    for (let col = 0; col < 48; col++) {
+    for (let col = 0; col < 40; col++) {
       currentRow.push(createNode(col, row));
     }
     grid.push(currentRow);
